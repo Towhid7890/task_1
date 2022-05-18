@@ -2,18 +2,25 @@ export let quiz = [
   {
     id: 1,
     type: "short_answer",
-    question: "Why is the sky blue?",
+    question: "Hello. What's your name?",
     answers: [],
     correct_answer: 0,
   },
   {
     id: 2,
     type: "multiple_choice",
-    question: "Why is the sky blue?",
+    question: "What industry are you in?",
+   
     answers: [
-      { id: 1, answer: "Because of physics" },
-      { id: 2, answer: "Because that the way it always was" },
-      { id: 3, answer: "I don't know" },
+      { id: 1, checkedData: false,answer: "Professional Service" },
+      { id: 2,checkedData: false, answer: "Agency" },
+      { id: 3,checkedData: false, answer: "HealthCare" },
+      { id: 4,checkedData: false, answer: "Consumer apps and media" },
+      { id: 5,checkedData: false, answer: "Consumer services" },
+      { id: 6,checkedData: false, answer: "Software and services" },
+      { id: 7,checkedData: false, answer: "Ecommerce, Retail and consumer Good" },
+      { id: 8,checkedData: false, answer: "Education" },
+      { id: 9,checkedData: false, answer: "Other" },
     ],
     correct_answer: 1,
   },
@@ -34,14 +41,14 @@ export let quiz = [
   {
     id: 4,
     type: "long_text",
-    question: "Why is the sky blue?",
+    question: "So first things first, how do you catch up on Nellie and CO.content?",
     answers: [],
     correct_answer: 0,
   },
   {
     id: 5,
     type: "description",
-    question: "random text to show to the user",
+    question: "Do you read new content?",
     answers: [],
     correct_answer: 0,
   },
@@ -53,3 +60,4 @@ export let quiz = [
     correct_answer: 2,
   },
 ];
+

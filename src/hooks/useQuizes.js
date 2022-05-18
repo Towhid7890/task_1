@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
+
 import { quiz } from "../main";
+export const UserContext = createContext();
+
+
 
 const useQuizes = () => {
   //
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answeredQuiz, setAnsweredQuiz] = useState(quiz);
+  
+ 
 
   //   taking value from each input and updating the correct answer from quiz
   const handleSimpleInput = (e) => {
@@ -15,7 +21,10 @@ const useQuizes = () => {
   // allAnswers  holds the correct answers to all questions
   const handleSubmit = () => {
     const allAnswers = answeredQuiz.map((answer) => answer.correct_answer);
-    console.log(allAnswers);
+   
+    
+
+     window.location.href='./result';
   };
   // ------------------------------
 
@@ -26,7 +35,11 @@ const useQuizes = () => {
     setAnsweredQuiz,
     handleSimpleInput,
     handleSubmit,
+   
+   
+    
   };
+  
 };
 
 export default useQuizes;
